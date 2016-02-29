@@ -1,0 +1,12 @@
+package com.example.spring.client;
+
+import com.example.spring.manager.UserManager;
+import com.example.spring.manager.UserManagerImpl;
+
+public class Client {
+
+	public static void main(String[] args) {
+		UserManager manager = new UserManagerImpl();
+		manager.addUser("!", "!");
+	}
+}

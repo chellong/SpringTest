@@ -1,0 +1,14 @@
+package com.example.spring;
+
+import org.aopalliance.intercept.Joinpoint;
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+@SuppressWarnings("unused")
+public class SecurityHandler  {
+	
+	private void checkSecurity(Joinpoint joinpoint) {
+		System.out.println("-------checkSecurity-------");
+	}
+	
+}

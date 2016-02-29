@@ -1,0 +1,14 @@
+package com.example.spring.client;
+
+/**
+ * DIÒÀÀµ×¢Èë 
+ * @author ±±·ÉµÄºòÄñ
+ *
+ */
+public class Client {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

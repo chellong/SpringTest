@@ -1,0 +1,25 @@
+package com.example.spring.manager;
+
+import com.example.whyspring.dao.UserDao;
+import com.example.whyspring.dao.UserDao4MysqlImple;
+
+public class UserManagerImpl implements UserManager{
+
+	private UserDao dao;
+	
+	public UserManagerImpl() {
+		// TODO Auto-generdated constructor stub
+	}
+	
+	@Override
+	public void addUser(String username, String userpwd) {
+		
+		/**
+		 * 服务(对象)定位
+		 * 由自己负责
+		 */
+		UserDao dao = new UserDao4MysqlImple();
+		dao.addUser(username, userpwd);
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.example.spring;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+@SuppressWarnings("unused")
+public class SecurityHandler  {
+	
+	private void checkSecurity() {
+		System.out.println("-------checkSecurity-------");
+	}
+	
+}

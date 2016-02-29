@@ -1,0 +1,17 @@
+package com.example.whyspring.client;
+
+import com.example.spring.manager.UserManager;
+import com.example.spring.manager.UserManagerImpl;
+
+public class Client {
+
+	public static void main(String[] args) {
+		
+		/**
+		 * 服务(对象)定位
+		 * 由自己负责
+		 */
+		UserManager manager = new UserManagerImpl();
+		manager.addUser("!", "!");
+	}
+}

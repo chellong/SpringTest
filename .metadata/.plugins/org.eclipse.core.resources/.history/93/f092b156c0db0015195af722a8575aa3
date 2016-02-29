@@ -1,0 +1,6 @@
+package com.example.whyspring.dao;
+
+public interface UserDao {
+
+	void addUser(String username,String userpwd);
+}

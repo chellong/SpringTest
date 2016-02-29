@@ -1,0 +1,26 @@
+package com.example.spring;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class SecurityHandler  {
+	
+	/**
+	 * 匹配add方法
+	 * 
+	 * 定义pointcut
+	 * 此方法没有参数和返回值
+	 */
+	@Pointcut("execution(* add*(..))")
+	private void addAddMethod(){
+		
+	}
+	
+	@Before("addAddMethod")
+	private void checkSecurity() {
+		System.out.println("-------checkSecurity-------");
+	}	
+	
+}

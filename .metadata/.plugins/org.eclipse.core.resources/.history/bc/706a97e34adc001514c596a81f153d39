@@ -1,0 +1,11 @@
+package com.example.spring;
+
+import org.aspectj.lang.annotation.Aspect;
+
+public class SecurityHandler  {
+	
+	private void checkSecurity(Joinpoint joinpoint) {
+		System.out.println("-------checkSecurity-------");
+	}
+	
+}

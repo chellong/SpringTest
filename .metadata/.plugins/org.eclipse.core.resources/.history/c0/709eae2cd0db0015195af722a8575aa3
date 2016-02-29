@@ -1,0 +1,26 @@
+package com.example.spring.injoction;
+
+import org.junit.After;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.example.spring.bean.Bean1;
+
+public class Test {
+	
+	private BeanFactory factory;
+	
+	@After
+	public void afterClass(){
+		
+		factory = new ClassPathXmlApplicationContext("applicationContext-*.xml");
+	}
+	
+	@org.junit.Test
+	public void m01(){
+		Bean1 bean1 = (Bean1) factory.getBean("bean1");
+		System.out.println(bean1.getStrValue());
+	}
+	
+
+}

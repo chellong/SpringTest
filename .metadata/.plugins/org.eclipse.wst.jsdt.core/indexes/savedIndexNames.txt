@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+E:\¹¤×÷¿Õ¼ä\SpringBasicTest\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4129483904.index
+623316463.index
+3575708933.index
+3922092687.index
+572945917.index
+534678820.index
+1865137466.index
+2407031754.index

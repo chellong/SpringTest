@@ -1,0 +1,12 @@
+package com.bjpowernode.usermgr.manager;
+
+import com.bjpowernode.usermgr.domain.Log;
+import com.bjpowernode.usermgr.util.HibernateUtils;
+
+public class LogManagerImpl implements LogManager {
+
+	public void addLog(Log log) {
+		HibernateUtils.getSessionFactory().getCurrentSession().save(log);
+	}
+
+}

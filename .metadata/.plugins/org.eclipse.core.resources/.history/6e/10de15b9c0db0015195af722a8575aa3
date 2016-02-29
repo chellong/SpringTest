@@ -1,0 +1,16 @@
+package com.example.whyspring.manager;
+
+import com.bjpowernode.spring.dao.UserDao;
+import com.bjpowernode.spring.dao.UserDao4OracleImpl;
+
+public class UserManagerImpl implements UserManager {
+
+	public void addUser(String username, String password) {
+		
+		//由我们的应用程序负责服务（对象）定位
+		//UserDao userDao = new UserDao4MySqlImpl();
+		UserDao userDao = new UserDao4OracleImpl();
+		userDao.addUser(username, password);
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.example.spring.manager;
+
+public class UserManagerImpl implements UserManager{
+
+	@Override
+	public void addUser(String username, String userpwd) {
+		
+	}
+
+}

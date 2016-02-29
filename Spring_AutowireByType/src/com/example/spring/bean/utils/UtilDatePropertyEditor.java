@@ -1,0 +1,34 @@
+package com.example.spring.bean.utils;
+
+import java.beans.PropertyEditorSupport;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * java.util.DateÊôÐÔ±à¼­Æ÷
+ * @author Administrator
+ *
+ */
+public class UtilDatePropertyEditor extends PropertyEditorSupport {
+
+	private String pattern;
+	
+	@Override
+	public void setAsText(String text) throws IllegalArgumentException {
+		System.out.println("---UtilDatePropertyEditor.setAsText()--->" + text);
+		try {
+			Date date = new SimpleDateFormat(pattern).parse(text);
+			this.setValue(date);
+		} catch (ParseException e) {
+			e.printStackTrace();
+			throw new IllegalArgumentException(text);
+		}
+	}
+
+	public void setPattern(String pattern) {
+		this.pattern = pattern;
+	}
+
+	
+}

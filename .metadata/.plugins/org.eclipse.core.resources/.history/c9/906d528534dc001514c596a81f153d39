@@ -1,0 +1,9 @@
+package com.example.proxy;
+
+public class Client {
+
+	public static void main(String[] args) {
+		
+		UserManager manager = new UserManagerImplProxy(new UserManagerImpl());
+	}
+}

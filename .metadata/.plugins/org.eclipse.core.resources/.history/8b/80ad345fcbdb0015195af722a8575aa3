@@ -1,0 +1,11 @@
+package com.example.spring.injoction;
+
+public class Test {
+	
+	@org.junit.Test
+	public void m01(){
+		
+	}
+	
+
+}

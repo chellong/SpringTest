@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.spring.Bean1"/>
+<fullyQualifiedTypeName name="com.example.domin.Log"/>
+<fullyQualifiedTypeName name="com.example.utils.HibernateUtils"/>
+<fullyQualifiedTypeName name="com.example.manager.UserManager"/>
+<fullyQualifiedTypeName name="com.example.domin.User"/>
+<fullyQualifiedTypeName name="com.example.manager.UserManagerImpl"/>
+<fullyQualifiedTypeName name="com.example.domain.User"/>
+<fullyQualifiedTypeName name="com.example.domain.Log"/>
+<fullyQualifiedTypeName name="com.example.usermgr.web.forms.LoginActionForm"/>
+<fullyQualifiedTypeName name="com.example.usermgr.manager.UserManager"/>
+</qualifiedTypeNameHistroy>

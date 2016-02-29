@@ -1,0 +1,28 @@
+package com.example.test;
+
+import org.junit.Test;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.example.domain.User;
+import com.example.manager.UserManager;
+
+
+public class UserManagerImplTest {
+
+	@Test
+	public void testAddUser() {
+		BeanFactory factory = new ClassPathXmlApplicationContext("applicationContext-*.xml");
+		UserManager userManager = (UserManager)factory.getBean("userManager");
+		
+		User user = new User();
+		user.setName("ÕÅÈý");
+		try {
+			userManager.addUser(user);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

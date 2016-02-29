@@ -1,0 +1,22 @@
+package com.example.spring.injoction;
+
+import org.junit.After;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+	
+	private BeanFactory factory;
+	
+	@After
+	public void afterClass(){
+		factory = new ClassPathXmlApplicationContext("");
+	}
+	
+	@org.junit.Test
+	public void m01(){
+		
+	}
+	
+
+}

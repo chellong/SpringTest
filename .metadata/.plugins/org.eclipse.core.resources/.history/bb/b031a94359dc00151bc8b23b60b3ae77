@@ -1,0 +1,6 @@
+package com.example.manager;
+
+public interface UserManager {
+
+	public void addUser(User user);
+}

@@ -1,0 +1,19 @@
+package com.example.spring.client;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * DIÒÀÀµ×¢Èë 
+ * @author ±±·ÉµÄºòÄñ
+ *
+ */
+public class Client {
+	
+	public static void main(String[] args) {
+		
+		BeanFactory factory = new ClassPathXmlApplicationContext("applicationContext.xml");
+		factory.getBean("");
+	}
+
+}
